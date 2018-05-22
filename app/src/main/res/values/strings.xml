@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Control de inventario</string>
+
+    <array name="titulos">
+        <item name="movimientos">Movimientos</item>
+        <item name="productos">Productos</item>
+    </array>
+</resources>

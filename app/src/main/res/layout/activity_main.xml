@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.gigamole.navigationtabstrip.NavigationTabStrip
+            android:id="@+id/nts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            app:nts_size="15sp"
+            app:nts_weight="2dp"
+            app:nts_factor="2.5"
+            app:nts_type="line"
+            app:nts_gravity="bottom"
+            app:nts_typeface="fonts/typeface.otf"
+            app:nts_corners_radius="1.5dp"
+            app:nts_titles="@array/titulos"
+            app:nts_animation_duration="150"
+            app:nts_active_color="@color/white"
+            app:nts_color="@color/white"
+            app:nts_inactive_color="#c4c4c4"/>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:id="@+id/contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
